@@ -4,6 +4,8 @@ manifest:
       url-base: https://github.com/zmkfirmware
     - name: hitsmaxft
       url-base: https://github.com/hitsmaxft
+    - name: stevenlee0809
+      url-base: https://github.com/stevenlee0809
     - name: urob
       url-base: https://github.com/urob
   projects:
@@ -22,7 +24,7 @@ manifest:
       revision: main
       clone-depth: 1
     - name: zmk-dongle-display
-      remote: hitsmaxft
+      remote: stevenlee0809
       revision: main
       clone-depth: 1
   self:
