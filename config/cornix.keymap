@@ -51,6 +51,14 @@
             hold-trigger-on-release;
         };
 
+        softoff: softoff {
+            compatible = "zmk,behavior-soft-off";
+            label = "SOFTOFF";
+            #binding-cells = <0>;
+            hold-time-ms = <2000>;
+            split-peripheral-off-on-press;
+        };
+
         // Positional Homerow mods for shift
         // Use faster tapping term and disable some features that may
         // cause false negatives.
@@ -150,10 +158,10 @@
 
         conf_layer {
             bindings = <
-&none  &bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                &none  &none  &none  &none  &none  &none
-&none  &none           &none         &none         &none         &none                       &none  &none  &none  &none  &none  &none
-&none  &none           &none         &none         &none         &none         &none  &none  &none  &none  &none  &none  &none  &none
-&none  &none           &none         &out OUT_USB  &out OUT_BLE  &sys_reset                  &none  &none  &none  &none  &none  &none
+&none  &bt BT_CLR_ALL  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3                &none  &none  &none      &none  &none  &none
+&none  &none           &none         &none         &none         &none                       &none  &none  &none      &none  &none  &none
+&none  &none           &none         &none         &none         &none         &none  &none  &none  &none  &none      &none  &none  &none
+&none  &none           &none         &out OUT_USB  &out OUT_BLE  &sys_reset                  &none  &none  &soft_off  &none  &none  &none
             >;
 
             label = "CONF";
