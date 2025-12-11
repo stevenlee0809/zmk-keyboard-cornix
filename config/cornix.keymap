@@ -77,6 +77,220 @@
 
     combos { compatible = "zmk,combos"; };
 
+    macros {
+        tmux_zoom: tmux_zoom {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LC(A)>,
+                <&macro_release>,
+                <&kp LC(A)>,
+                <&macro_tap>,
+                <&kp Z>;
+
+            label = "TMUX_ZOOM";
+        };
+
+        tmux_switch_win: tmux_switch_win {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LC(A)>,
+                <&macro_release>,
+                <&kp LC(A)>,
+                <&macro_tap>,
+                <&kp L>;
+
+            label = "TMUX_SWITCH_WIN";
+        };
+
+        tmux_switch_client: tmux_switch_client {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LC(A)>,
+                <&macro_release>,
+                <&kp LC(A)>,
+                <&macro_tap>,
+                <&kp LS(L)>;
+
+            label = "TMUX_SWITCH_CLIENT";
+        };
+
+        tmux_next_client: tmux_next_client {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LC(A)>,
+                <&macro_release>,
+                <&kp LC(A)>,
+                <&macro_tap>,
+                <&kp RIGHT_PARENTHESIS>;
+
+            label = "TMUX_NEXT_CLIENT";
+        };
+
+        tmux_prev_client: tmux_prev_client {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LC(A)>,
+                <&macro_release>,
+                <&kp LC(A)>,
+                <&macro_tap>,
+                <&kp LEFT_PARENTHESIS>;
+
+            label = "TMUX_PREV_CLIENT";
+        };
+
+        tmux_copy: tmux_copy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LC(A)>,
+                <&macro_release>,
+                <&kp LC(A)>,
+                <&macro_tap>,
+                <&kp LEFT_BRACKET>;
+
+            label = "TMUX_COPY";
+        };
+
+        tmux_paste: tmux_paste {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LC(A)>,
+                <&macro_release>,
+                <&kp LC(A)>,
+                <&macro_tap>,
+                <&kp RIGHT_BRACKET>;
+
+            label = "TMUX_PASTE";
+        };
+
+        tmux_sel_w0: tmux_sel_w0 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LC(A)>,
+                <&macro_release>,
+                <&kp LC(A)>,
+                <&macro_tap>,
+                <&kp N0>;
+
+            label = "TMUX_SEL_W0";
+        };
+
+        tmux_sel_w1: tmux_sel_w1 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LC(A)>,
+                <&macro_release>,
+                <&kp LC(A)>,
+                <&macro_tap>,
+                <&kp NUMBER_1>;
+
+            label = "TMUX_SEL_W1";
+        };
+
+        tmux_sel_w2: tmux_sel_w2 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LC(A)>,
+                <&macro_release>,
+                <&kp LC(A)>,
+                <&macro_tap>,
+                <&kp NUMBER_2>;
+
+            label = "TMUX_SEL_W2";
+        };
+
+        tmux_sel_w3: tmux_sel_w3 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LC(A)>,
+                <&macro_release>,
+                <&kp LC(A)>,
+                <&macro_tap>,
+                <&kp NUMBER_3>;
+
+            label = "TMUX_SEL_W3";
+        };
+
+        tmux_sel_w4: tmux_sel_w4 {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LC(A)>,
+                <&macro_release>,
+                <&kp LC(A)>,
+                <&macro_tap>,
+                <&kp NUMBER_4>;
+
+            label = "TMUX_SEL_W4";
+        };
+
+        tmux_kill_pane: tmux_kill_pane {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LC(A)>,
+                <&macro_release>,
+                <&kp LC(A)>,
+                <&macro_tap>,
+                <&kp X>,
+                <&macro_tap>,
+                <&kp Y>;
+
+            label = "TMUX_KILL_PANE";
+        };
+
+        tmux_split_v: tmux_split_v {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LC(A)>,
+                <&macro_release>,
+                <&kp LC(A)>,
+                <&macro_tap>,
+                <&kp PERCENT>;
+
+            label = "TMUX_SPLIT_V";
+        };
+
+        tmux_split_s: tmux_split_s {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings =
+                <&macro_press>,
+                <&kp LC(A)>,
+                <&macro_release>,
+                <&kp LC(A)>,
+                <&macro_tap>,
+                <&kp DOUBLE_QUOTES>;
+
+            label = "TMUX_SPLIT_S";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -94,7 +308,7 @@
 &kp GRAVE     &kp Q      &kp W         &kp E               &kp R          &kp T                      &kp Y        &kp U          &kp I                &kp O         &kp P          &kp PRINTSCREEN
 &kp CLCK      &kp A      &hm_l LALT S  &hm_l LEFT_SHIFT D  &hm_l LCTRL F  &kp G                      &kp H        &hm_r RCTRL J  &hm_r RIGHT_SHIFT K  &hm_r RALT L  &kp SEMICOLON  &kp INS
 &kp LEFT_GUI  &kp Z      &kp X         &kp C               &kp V          &kp B        &none  &none  &kp N        &kp M          &kp COMMA            &kp DOT       &kp FSLH       &lt 5 RGUI
-&kp LA(TAB)   &kp LC(C)  &kp LC(V)     &lt 1 ESCAPE        &lt 2 TAB      &lt 3 SPACE                &lt 4 ENTER  &kp BACKSPACE  &kp DEL              &none         &none          &none
+&kp LA(TAB)   &kp LC(C)  &kp LC(V)     &lt 1 ESCAPE        &lt 2 TAB      &lt 3 SPACE                &lt 4 ENTER  &kp BACKSPACE  &lt 6 DEL            &none         &none          &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
@@ -116,9 +330,9 @@
 
         num_layer {
             bindings = <
-&none  &none     &none     &none      &none      &none                &kp LBKT   &kp N7  &kp N8   &kp N9  &kp RBKT   &none
-&none  &kp LGUI  &kp LALT  &kp LSHFT  &kp LCTRL  &none                &kp GRAVE  &kp N4  &kp N5   &kp N6  &kp EQUAL  &none
-&none  &none     &none     &none      &none      &none  &none  &none  &kp APOS   &kp N1  &kp N2   &kp N3  &kp BSLH   &none
+&none  &none     &none     &none      &none      &none                &kp LBKT   &kp N7  &kp N8   &kp N9  &kp RBKT   &kp SLASH
+&none  &kp LGUI  &kp LALT  &kp LSHFT  &kp LCTRL  &none                &kp GRAVE  &kp N4  &kp N5   &kp N6  &kp EQUAL  &kp ASTERISK
+&none  &none     &none     &none      &none      &none  &none  &none  &kp APOS   &kp N1  &kp N2   &kp N3  &kp BSLH   &kp PLUS
 &none  &none     &none     &none      &none      &none                &kp MINUS  &kp N0  &kp DOT  &none   &none      &none
             >;
 
@@ -144,10 +358,10 @@
 
         Fn_layer {
             bindings = <
-&kp LG(SPACE)  &kp F12  &kp F7  &kp F8  &kp F9  &none                &none  &none      &none      &none     &none     &none
-&kp LC(LA(N))  &kp F11  &kp F4  &kp F5  &kp F6  &none                &none  &kp RCTRL  &kp RSHFT  &kp RALT  &kp RGUI  &none
-&none          &kp F10  &kp F1  &kp F2  &kp F3  &none  &none  &none  &none  &none      &none      &none     &none     &none
-&none          &none    &none   &none   &none   &none                &none  &none      &none      &none     &none     &none
+&kp LG(SPACE)  &kp F12  &kp F7  &kp F8  &kp F9  &kp PRINTSCREEN                &none  &none      &none      &none     &none     &none
+&kp LC(LA(N))  &kp F11  &kp F4  &kp F5  &kp F6  &kp SCROLLLOCK                 &none  &kp RCTRL  &kp RSHFT  &kp RALT  &kp RGUI  &none
+&none          &kp F10  &kp F1  &kp F2  &kp F3  &none            &none  &none  &none  &none      &none      &none     &none     &none
+&none          &none    &none   &none   &none   &none                          &none  &none      &none      &none     &none     &none
             >;
 
             label = "Fn";
@@ -165,6 +379,17 @@
             >;
 
             label = "CONF";
+        };
+
+        tmux {
+            bindings = <
+&trans  &tmux_sel_w0  &tmux_sel_w1  &tmux_sel_w2      &tmux_sel_w3         &tmux_sel_w4                       &trans  &trans         &trans         &trans  &trans  &tmux_kill_pane
+&trans  &trans        &trans        &tmux_switch_win  &tmux_switch_client  &trans                             &trans  &tmux_split_v  &tmux_split_s  &trans  &trans  &trans
+&trans  &tmux_zoom    &trans        &tmux_paste       &tmux_copy           &trans             &trans  &trans  &trans  &trans         &trans         &trans  &trans  &trans
+&trans  &trans        &trans        &trans            &tmux_prev_client    &tmux_next_client                  &trans  &trans         &trans         &trans  &trans  &trans
+            >;
+
+            label = "TMUX";
         };
     };
 };
