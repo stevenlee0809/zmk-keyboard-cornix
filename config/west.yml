@@ -11,7 +11,7 @@ manifest:
   projects:
     - name: zmk
       remote: zmkfirmware
-      revision: main
+      revision: c25e927a2fae915e208a8777ce211a10c658e771
       clone-depth: 1
       import:
         file: app/west.yml
