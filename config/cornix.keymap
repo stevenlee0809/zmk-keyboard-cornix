@@ -305,10 +305,10 @@
             //               | GUI | ALT  | CTRL | LOWER|  ENTER |  | SPACE | RAISE| CTRL  | ALT   | GUI  |
 
             bindings = <
-&kp GRAVE     &kp Q      &kp W         &kp E               &kp R          &kp T                      &kp Y        &kp U          &kp I                &kp O         &kp P          &kp PRINTSCREEN
-&kp CLCK      &kp A      &hm_l LALT S  &hm_l LEFT_SHIFT D  &hm_l LCTRL F  &kp G                      &kp H        &hm_r RCTRL J  &hm_r RIGHT_SHIFT K  &hm_r RALT L  &kp SEMICOLON  &kp INS
-&kp LEFT_GUI  &kp Z      &kp X         &kp C               &kp V          &kp B        &none  &none  &kp N        &kp M          &kp COMMA            &kp DOT       &kp FSLH       &lt 5 RGUI
-&kp LA(TAB)   &kp LC(C)  &kp LC(V)     &lt 1 ESCAPE        &lt 2 TAB      &lt 3 SPACE                &lt 4 ENTER  &kp BACKSPACE  &lt 6 DEL            &none         &none          &none
+&kp GRAVE              &kp Q      &kp W         &kp E               &kp R          &kp T                      &kp Y        &kp U          &kp I                &kp O         &kp P          &kp PRINTSCREEN
+&hm_l CLCK LEFT_SHIFT  &kp A      &hm_l LALT S  &hm_l LEFT_SHIFT D  &hm_l LCTRL F  &kp G                      &kp H        &hm_r RCTRL J  &hm_r RIGHT_SHIFT K  &hm_r RALT L  &kp SEMICOLON  &kp INS
+&kp LEFT_GUI           &kp Z      &kp X         &kp C               &kp V          &kp B        &none  &none  &kp N        &kp M          &kp COMMA            &kp DOT       &kp FSLH       &lt 5 RGUI
+&kp LA(TAB)            &kp LC(C)  &kp LC(V)     &lt 1 ESCAPE        &lt 2 TAB      &lt 3 SPACE                &lt 4 ENTER  &kp BACKSPACE  &lt 6 DEL            &none         &none          &none
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOL_UP C_VOL_DN &inc_dec_kp PG_UP PG_DN>;
